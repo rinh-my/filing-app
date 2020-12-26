@@ -21,6 +21,10 @@ Route::get('/maine/secret', 'FilingappController@secret');
 Route::get('/maine/meething', 'FilingappController@meething');
 Route::get('/maine/mainemail', 'FilingappController@mainmail');
 
+// メッセージ機能
+Route::get('/message/create', 'MessageController@create');
+Route::post('/message/store', 'MessageController@store');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

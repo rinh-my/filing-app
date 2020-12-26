@@ -58,7 +58,7 @@
       @endforeach
   </div>
   <div class="row">
-    <a href="mailto:送信先メールアドレス" class="navbar fixed-bottom rounded-circle mail">メールの画像
+    <a href="/message/create" class="navbar fixed-bottom rounded-circle mail">メールの画像
     </a>
   </div>
 </div>
