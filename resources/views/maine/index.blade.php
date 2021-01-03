@@ -18,7 +18,7 @@
             <th>金</th>
             <th class="sat">土</th>
           </tr>
-          <tr style="height: 80px">
+          <tr style="height: 60px">
             @for ($i = 1; $i <= $start->dayOfWeek; $i++)
             <td></td>
             @endfor
@@ -26,7 +26,7 @@
             <td>{{$i}}</td>
             @if( ($i+$start->dayOfWeek)%7 == 0 )
           </tr>
-          <tr style="height: 80px">
+          <tr style="height: 60px">
             @endif
             @endfor
             @for ($i = 1; $i <= 6-$end->dayOfWeek; $i++)
@@ -49,13 +49,15 @@
         @endforeach
       </div>
       {{-- 名前クリックで出てくるように実装したい：まずはメール表示 --}}
+      <div class="col-7">
       @foreach ($messages as $message)
-      <div class="col tolk">
-        <p>{{$message->created_at}}</p><br>
-        <p>{{$message->title}}</p><br>
-        <p>{{$message->content}}</p>
+        <div class="row tolk">
+        <p class="col-12">{{$message->created_at}}</p>
+        <p class="col-12">{{$message->title}}</p>
+        <p class="col-12">{{$message->content}}</p>
+        </div>
+        @endforeach
       </div>
-      @endforeach
   </div>
   <div class="row">
     <a href="/message/create" class="navbar fixed-bottom rounded-circle mail">メールの画像
