@@ -52,7 +52,7 @@
       <div class="col-7">
       @foreach ($messages as $message)
         <div class="row tolk">
-        <p class="col-12">{{$message->created_at}}</p>
+        <p class="col-12">{{$message->created_at}}<button type="submit" class="btn btn-warning">返信</button></p>
         <p class="col-12">{{$message->title}}</p>
         <p class="col-12">{{$message->content}}</p>
         </div>
@@ -60,7 +60,8 @@
       </div>
   </div>
   <div class="row">
-    <a href="/message/create" class="navbar fixed-bottom rounded-circle mail">メールの画像
+    <a href="/message/create" class="navbar fixed-bottom rounded-circle mail">
+      <img src="" alt="">
     </a>
   </div>
 </div>
