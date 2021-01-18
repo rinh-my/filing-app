@@ -61,7 +61,7 @@
   </div>
   <div class="row">
     <a href="/message/create" class="navbar fixed-bottom rounded-circle mail">
-      <img src="" alt="">
+      <i class="fas fa-envelope icon"></i>
     </a>
   </div>
 </div>

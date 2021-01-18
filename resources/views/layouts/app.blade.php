@@ -11,11 +11,13 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
+    {{-- パラメーターをつけてあげるといい --}}
+    <link href="/css/stylesheet.css?date=20210109" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -24,7 +26,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light text-monospace bg-success">
             <div class="container">
-                <a class="navbar-brand text-warning" href="{{ url('/') }}">
+                <a class="navbar-brand text-warning" href="{{ url('/maine') }}">
                     {{ config('app.name', 'WeddingPlan') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
